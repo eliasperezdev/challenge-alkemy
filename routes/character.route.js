@@ -7,14 +7,16 @@ import {
 } from "../controllers/character.controller.js"
 
 import {Router} from "express"
+import checkAuth from "../middleware/checkAuth.js"
+
 
 const router = Router()
 
-router.get("/", listCharacters)
-router.get("/:idCharacter", getCharacter)
-router.post("/", addCharacter)
-router.put("/:idCharacter", editCharacter)
-router.delete("/:idCharacter", deleteCharacter)
+router.get("/",checkAuth, listCharacters)
+router.get("/:idCharacter",checkAuth, getCharacter)
+router.post("/",checkAuth, addCharacter)
+router.put("/:idCharacter",checkAuth, editCharacter)
+router.delete("/:idCharacter",checkAuth, deleteCharacter)
 
 
 export default router

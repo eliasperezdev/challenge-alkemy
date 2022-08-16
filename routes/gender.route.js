@@ -6,13 +6,15 @@ import {
 } from "../controllers/gender.controller.js"
 
 import {Router} from "express"
+import checkAuth from "../middleware/checkAuth.js"
+
 
 const router = Router()
 
-router.get("/", getGenders)
-router.post("/", addGender)
-router.put("/:idGender", editGender)
-router.delete("/:idGender", deleteGender)
+router.get("/",checkAuth, getGenders)
+router.post("/",checkAuth, addGender)
+router.put("/:idGender",checkAuth, editGender)
+router.delete("/:idGender",checkAuth, deleteGender)
 
 
 export default router
