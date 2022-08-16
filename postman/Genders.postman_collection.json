@@ -7,7 +7,7 @@
 	},
 	"item": [
 		{
-			"name": "getCharacter",
+			"name": "getGenders",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -17,7 +17,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21icmUiOiJFbGlhcyIsImVtYWlsIjoiZXhhbXBsZUBleGFtZjUuY29tIiwiaWF0IjoxNjYwNTY4NjAxLCJleHAiOjE2NjA1OTc0MDF9.rdFK-CAgt5Nx-XQMu4OBmUgcR3F99HvoX4RTZxi_JAI",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21icmUiOiJFbGlhcyIsImVtYWlsIjoiZXhhbXBsZUBleGFtZjUuY29tIiwiaWF0IjoxNjYwNjUwNzMzLCJleHAiOjE2NjA2Nzk1MzN9.vXy3daL7IsboW_hp8JzR4UyYeaDRoB24eXhZKfzssxM",
 							"type": "string"
 						}
 					]
@@ -49,7 +49,7 @@
 			"response": []
 		},
 		{
-			"name": "editCharacter",
+			"name": "editGender",
 			"request": {
 				"auth": {
 					"type": "bearer",
@@ -127,7 +127,7 @@
 			"response": []
 		},
 		{
-			"name": "deleteCharacter",
+			"name": "deleteGender",
 			"request": {
 				"auth": {
 					"type": "bearer",

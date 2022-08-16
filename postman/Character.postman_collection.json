@@ -124,7 +124,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21icmUiOiJFbGlhcyIsImVtYWlsIjoiZXhhbXBsZUBleGFtZjUuY29tIiwiaWF0IjoxNjYwNTY4NjAxLCJleHAiOjE2NjA1OTc0MDF9.rdFK-CAgt5Nx-XQMu4OBmUgcR3F99HvoX4RTZxi_JAI",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21icmUiOiJFbGlhcyIsImVtYWlsIjoiZXhhbXBsZUBleGFtZjUuY29tIiwiaWF0IjoxNjYwNjUwNzMzLCJleHAiOjE2NjA2Nzk1MzN9.vXy3daL7IsboW_hp8JzR4UyYeaDRoB24eXhZKfzssxM",
 							"type": "string"
 						}
 					]
@@ -143,6 +143,11 @@
 						"characters"
 					],
 					"query": [
+						{
+							"key": "age",
+							"value": "50",
+							"disabled": true
+						},
 						{
 							"key": "movie",
 							"value": "1",

@@ -14,7 +14,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21icmUiOiJFbGlhcyIsImVtYWlsIjoiZXhhbXBsZUBleGFtZjUuY29tIiwiaWF0IjoxNjYwNTY4NjAxLCJleHAiOjE2NjA1OTc0MDF9.rdFK-CAgt5Nx-XQMu4OBmUgcR3F99HvoX4RTZxi_JAI",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21icmUiOiJFbGlhcyIsImVtYWlsIjoiZXhhbXBsZUBleGFtZjUuY29tIiwiaWF0IjoxNjYwNjUwNzMzLCJleHAiOjE2NjA2Nzk1MzN9.vXy3daL7IsboW_hp8JzR4UyYeaDRoB24eXhZKfzssxM",
 							"type": "string"
 						}
 					]
@@ -23,7 +23,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"image\": \"www.imagen.com\",\r\n    \"title\": \"Iron man\",\r\n    \"creation_date\": \"2008, 04, 30\",\r\n    \"qualification\": \"4\",\r\n    \"gender\": [1],\r\n    \"characters\": [1,2]\r\n}",
+					"raw": "{\r\n    \"image\": \"www.imagen.com\",\r\n    \"title\": \"Capitan america\",\r\n    \"creation_date\": \"2008, 04, 30\",\r\n    \"qualification\": \"4\",\r\n    \"gender\": [3],\r\n    \"characters\": [1,2]\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -141,6 +141,23 @@
 					"path": [
 						"api",
 						"movies"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "america",
+							"disabled": true
+						},
+						{
+							"key": "genre",
+							"value": "3",
+							"disabled": true
+						},
+						{
+							"key": "order",
+							"value": "DESC",
+							"disabled": true
+						}
 					]
 				}
 			},
