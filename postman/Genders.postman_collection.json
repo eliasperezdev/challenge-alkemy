@@ -1,0 +1,161 @@
+{
+	"info": {
+		"_postman_id": "63a4aa74-8b1e-49e5-a993-95c401a52357",
+		"name": "Genders",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18828952"
+	},
+	"item": [
+		{
+			"name": "getCharacter",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21icmUiOiJFbGlhcyIsImVtYWlsIjoiZXhhbXBsZUBleGFtZjUuY29tIiwiaWF0IjoxNjYwNTY4NjAxLCJleHAiOjE2NjA1OTc0MDF9.rdFK-CAgt5Nx-XQMu4OBmUgcR3F99HvoX4RTZxi_JAI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/genders",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"genders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "editCharacter",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21icmUiOiJFbGlhcyIsImVtYWlsIjoiZXhhbXBsZUBleGFtZjUuY29tIiwiaWF0IjoxNjYwNTY4NjAxLCJleHAiOjE2NjA1OTc0MDF9.rdFK-CAgt5Nx-XQMu4OBmUgcR3F99HvoX4RTZxi_JAI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Drama\",\r\n    \"image\": \"www.imagen.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/genders",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"genders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addGender",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21icmUiOiJFbGlhcyIsImVtYWlsIjoiZXhhbXBsZUBleGFtZjUuY29tIiwiaWF0IjoxNjYwNjUwNzMzLCJleHAiOjE2NjA2Nzk1MzN9.vXy3daL7IsboW_hp8JzR4UyYeaDRoB24eXhZKfzssxM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Ciencia ficcion\",\r\n    \"image\": \"www.imagen.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/genders",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"genders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteCharacter",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21icmUiOiJFbGlhcyIsImVtYWlsIjoiZXhhbXBsZUBleGFtZjUuY29tIiwiaWF0IjoxNjYwNTY4NjAxLCJleHAiOjE2NjA1OTc0MDF9.rdFK-CAgt5Nx-XQMu4OBmUgcR3F99HvoX4RTZxi_JAI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/genders/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"genders",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
